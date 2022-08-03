@@ -1,0 +1,211 @@
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+p,
+h2,
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.how {
+    padding: 160px 0 329px;
+
+    .how__container {
+        .how__list {
+            display: flex;
+            justify-content: space-between;
+
+            .how__item {
+                width: 32%;
+
+                .how__item-img {
+                    width: 96px;
+                    height: 96px;
+                }
+
+                .how__item-text {
+                    .how__item-title {
+                        font-family: 'Space Mono';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 24px;
+                        line-height: 28px;
+                        letter-spacing: -1.07143px;
+                        color: #495567;
+                        margin: 40px 0 27px;
+                    }
+
+                    .how__item-copy {
+                        font-family: 'Lexend Deca';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 15px;
+                        line-height: 25px;
+                        color: #939CAA;
+                    }
+                }
+            }
+        }
+
+        .how__cards {
+            margin-top: 200px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 160px;
+
+
+            .how__card {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .how__card-text {
+                    width: 445px;
+
+                    .how__card-title {
+                        font-family: 'Space Mono';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 48px;
+                        line-height: 48px;
+                        letter-spacing: -2.14286px;
+                        color: #495567;
+                    }
+
+                    .how__card-copy {
+                        font-family: 'Lexend Deca';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 15px;
+                        line-height: 25px;
+                        color: #939CAA;
+                        margin: 24px 0 54px;
+                    }
+
+                    .how__link {
+                        @include main-link;
+                    }
+                }
+
+                .how__card-img {
+                    width: 445px;
+                    height: 445px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $tablet) {
+    .how {
+        .how__container {
+            .how__list {
+                flex-wrap: wrap;
+                row-gap: 40px;
+
+                .how__item {
+                    width: 100%;
+                    display: flex;
+                    column-gap: 69px;
+
+                    .how__item-text {
+                        .how__item-title {
+                            margin: 0;
+                            margin-bottom: 27px;
+                        }
+                    }
+                }
+            }
+
+            .how__cards {
+                .how__card {
+                    flex-direction: column-reverse;
+                    text-align: center;
+
+                    &:nth-child(2) {
+                        flex-direction: column;
+                    }
+
+                    .how__card-text {
+                        width: 573px;
+
+                        .how__card-title {
+                            margin-top: 64px;
+                            width: 457px;
+                            margin: 64px auto 0;
+                        }
+
+                        .how__card-copy {
+                            margin: 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $mobile) {
+    .how {
+        .how__container {
+            .how__list {
+                .how__item {
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+
+                    .how__item-img {
+                        width: 56px;
+                        height: 56px;
+                    }
+
+                    .how__item-text {
+                        .how__item-title {
+                            margin: 24px 0;
+                        }
+                    }
+                }
+            }
+
+            .how__cards {
+                row-gap: 120px;
+                .how__card {
+                    .how__card-img {
+                        width: 311px;
+                        height: 311px;
+                    }
+
+                    .how__card-text {
+                        .how__card-title {
+                            font-family: 'Space Mono';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 32px;
+                            line-height: 32px;
+                            text-align: center;
+                            letter-spacing: -1.42857px;
+                            color: #495567;
+                            width: 311px;
+                        }
+                        .how__card-copy{
+                            width: 310px;
+                            margin: 0;
+                            margin-left: 132px;
+                            margin-bottom: 32px;
+                            margin-top: 32px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

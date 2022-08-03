@@ -1,0 +1,176 @@
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    padding: 22px 21px;
+
+    .header__container {
+        display: flex;
+        align-items: center;
+        flex: 1;
+
+        .header__logo {
+            display: flex;
+            flex: 1;
+
+            .header__logo-link {
+                .header__logo-img {
+                    width: 107.82px;
+                }
+            }
+        }
+
+        .header__burger {
+            width: 19px;
+            height: 16px;
+            border: none;
+            outline: none;
+            padding: 0;
+            background: none;
+            display: none;
+
+            &-span {
+                display: block;
+                width: 100%;
+                height: 3.69px;
+                background-color: $yellow;
+                position: relative;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: 6.1px;
+                    width: 19px;
+                    height: 3.69px;
+                    background-color: $yellow;
+                }
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 6.1px;
+                    width: 19px;
+                    height: 3.69px;
+                    background-color: $yellow;
+                }
+            }
+        }
+
+        .header__dropdown {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex: 5;
+
+            .header__nav {
+                .header__list {
+                    display: flex;
+
+                    .header__item {
+                        margin-right: 32px;
+
+                        &:last-child {
+                            margin-right: 0;
+                        }
+
+                        .header__link {
+                            font-family: 'Space Mono';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 15px;
+                            line-height: 25px;
+                            color: #939CAA;
+                        }
+                    }
+                }
+            }
+
+            .header__get {
+                @include main-link;
+            }
+
+        }
+    }
+}
+
+@media only screen and (max-width: $tablet) {
+    .header {
+        .header__container {
+            .header__dropdown {
+                flex: 3.5;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $mobile) {
+    .header {
+        position: relative;
+
+        .header__container {
+
+
+            .header__logo {
+                justify-content: center;
+
+                .header__logo-link {
+                    .header__logo-img {
+                        width: 75.5px;
+                    }
+                }
+            }
+
+            .header__dropdown {
+                position: absolute;
+                top: 64px;
+                flex-direction: column;
+                align-items: flex-start;
+                background-color: #333A44;
+                width: 256px;
+                height: 87.2vh;
+                transition: 1s;
+                left: -256px;
+                z-index: 10;
+                padding: 64px 32px 24px;
+
+                .header__nav {
+                    .header__list {
+                        flex-direction: column;
+
+                        .header__item {
+                            margin-right: 0;
+
+                            .header__link {
+                                font-size: 18px;
+                                line-height: 25px;
+                                color: $dim-grey;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .header__burger {
+                display: block;
+
+                &:hover~.header__dropdown {
+                    left: 0;
+                }
+            }
+
+
+
+
+
+        }
+    }
+}

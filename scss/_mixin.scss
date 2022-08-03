@@ -1,0 +1,10 @@
+@mixin main-link {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
+    padding: 14px 43.5px 14px 44.5px;
+    background-color: $yellow;
+}
