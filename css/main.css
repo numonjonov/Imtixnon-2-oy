@@ -327,7 +327,6 @@ template {
   max-width: 1140px;
   margin: 0 auto;
   padding: 0 15px;
-  border: 1px solid;
 }
 
 @media only screen and (max-width: 1140px) {
