@@ -185,6 +185,7 @@ h3 {
                     }
 
                     .how__card-text {
+                        width: unset;
                         .how__card-title {
                             font-family: 'Space Mono';
                             font-style: normal;
@@ -199,9 +200,10 @@ h3 {
                         .how__card-copy{
                             width: 310px;
                             margin: 0;
-                            margin-left: 132px;
                             margin-bottom: 32px;
                             margin-top: 32px;
+
+
                         }
                     }
                 }

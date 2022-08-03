@@ -450,7 +450,7 @@ a {
   }
   .header .header__container .header__dropdown {
     position: absolute;
-    top: 64px;
+    top: 70px;
     flex-direction: column;
     align-items: flex-start;
     background-color: #333A44;
@@ -463,6 +463,7 @@ a {
   }
   .header .header__container .header__dropdown .header__nav .header__list {
     flex-direction: column;
+    row-gap: 24px;
   }
   .header .header__container .header__dropdown .header__nav .header__list .header__item {
     margin-right: 0;
@@ -470,7 +471,7 @@ a {
   .header .header__container .header__dropdown .header__nav .header__list .header__item .header__link {
     font-size: 18px;
     line-height: 25px;
-    color: #939CAA;
+    color: #fff;
   }
   .header .header__container .header__burger {
     display: block;
@@ -763,6 +764,9 @@ h3 {
     width: 311px;
     height: 311px;
   }
+  .how .how__container .how__cards .how__card .how__card-text {
+    width: unset;
+  }
   .how .how__container .how__cards .how__card .how__card-text .how__card-title {
     font-family: "Space Mono";
     font-style: normal;
@@ -777,7 +781,6 @@ h3 {
   .how .how__container .how__cards .how__card .how__card-text .how__card-copy {
     width: 310px;
     margin: 0;
-    margin-left: 132px;
     margin-bottom: 32px;
     margin-top: 32px;
   }
@@ -860,6 +863,9 @@ h3 {
   }
 }
 @media only screen and (max-width: 798px) {
+  .footer .footer__top {
+    padding: 88px 0;
+  }
   .footer .footer__top .footer__top-container .footer__title {
     font-size: 32px;
     line-height: 32px;
@@ -872,7 +878,23 @@ h3 {
     width: 113px;
     height: 40px;
   }
+  .footer .footer__bottom {
+    padding: 64px 0 88px;
+  }
+  .footer .footer__bottom .footer__bottom-container {
+    flex-direction: column;
+  }
   .footer .footer__bottom .footer__bottom-container .footer__bottom-links {
     flex: 3.5;
+    flex-direction: column;
+    row-gap: 85px;
+  }
+  .footer .footer__bottom .footer__bottom-container .footer__bottom-links .footer__nav {
+    margin-top: 41px;
+  }
+  .footer .footer__bottom .footer__bottom-container .footer__bottom-links .footer__nav .footer__list {
+    flex-direction: column;
+    text-align: center;
+    row-gap: 16px;
   }
 }/*# sourceMappingURL=main.css.map */
