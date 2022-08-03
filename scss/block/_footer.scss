@@ -60,6 +60,11 @@
                                 font-size: 15px;
                                 line-height: 25px;
                                 color: #939CAA;
+                                transition: color .3s;
+
+                                &:hover{
+                                    color: $yellow;
+                                }
                             }
                         }
                     }
@@ -72,6 +77,13 @@
                     .footer__soc-link {
                         font-size: 24px;
                         color: #FCB72B;
+                        transition: margin .3s, color .3s;
+                    }
+
+                    
+                    .footer__soc-link:hover{
+                        margin-top: -10px;
+                        color: #fff;
                     }
                 }
             }

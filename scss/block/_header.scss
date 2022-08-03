@@ -9,7 +9,14 @@ a {
 }
 
 .header {
+    width: 100%;
     padding: 22px 21px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 11;
+    background-color: #F2F2F2;
+
 
     .header__container {
         display: flex;
@@ -89,6 +96,11 @@ a {
                             font-size: 15px;
                             line-height: 25px;
                             color: #939CAA;
+                            transition: color .3s;
+
+                            &:hover{
+                                color: $yellow
+                            }
                         }
                     }
                 }

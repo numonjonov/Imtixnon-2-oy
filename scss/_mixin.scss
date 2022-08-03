@@ -7,4 +7,11 @@
     color: #FFFFFF;
     padding: 14px 43.5px 14px 44.5px;
     background-color: $yellow;
+    border: 2px solid $yellow;
+    transition: color .3s, background .3s;
+
+    &:hover{
+        color: $yellow;
+        background-color: unset;
+    }
 }

@@ -350,7 +350,13 @@ a {
 }
 
 .header {
+  width: 100%;
   padding: 22px 21px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 11;
+  background-color: #F2F2F2;
 }
 .header .header__container {
   display: flex;
@@ -420,6 +426,10 @@ a {
   font-size: 15px;
   line-height: 25px;
   color: #939CAA;
+  transition: color 0.3s;
+}
+.header .header__container .header__dropdown .header__nav .header__list .header__item .header__link:hover {
+  color: #FCB72B;
 }
 .header .header__container .header__dropdown .header__get {
   font-family: "Space Mono";
@@ -430,6 +440,12 @@ a {
   color: #FFFFFF;
   padding: 14px 43.5px 14px 44.5px;
   background-color: #FCB72B;
+  border: 2px solid #FCB72B;
+  transition: color 0.3s, background 0.3s;
+}
+.header .header__container .header__dropdown .header__get:hover {
+  color: #FCB72B;
+  background-color: unset;
 }
 
 @media only screen and (max-width: 1140px) {
@@ -493,7 +509,7 @@ p {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  padding: 153px 0 152px;
+  padding: 249px 0 152px;
   position: relative;
   overflow: hidden;
 }
@@ -558,11 +574,17 @@ p {
   color: #FFFFFF;
   padding: 14px 43.5px 14px 44.5px;
   background-color: #FCB72B;
+  border: 2px solid #FCB72B;
+  transition: color 0.3s, background 0.3s;
+}
+.intro .intro__container .intro__text .intro__links .intro__link:hover {
+  color: #FCB72B;
+  background-color: unset;
 }
 
 @media only screen and (max-width: 1140px) {
   .intro {
-    padding: 137px 0 217px;
+    padding: 225px 0 217px;
   }
   .intro .intro__container {
     display: flex;
@@ -628,6 +650,7 @@ h3 {
 
 .how {
   padding: 160px 0 329px;
+  background-color: #F2F2F2;
 }
 .how .how__container .how__list {
   display: flex;
@@ -699,6 +722,12 @@ h3 {
   color: #FFFFFF;
   padding: 14px 43.5px 14px 44.5px;
   background-color: #FCB72B;
+  border: 2px solid #FCB72B;
+  transition: color 0.3s, background 0.3s;
+}
+.how .how__container .how__cards .how__card .how__card-text .how__link:hover {
+  color: #FCB72B;
+  background-color: unset;
 }
 .how .how__container .how__cards .how__card .how__card-img {
   width: 445px;
@@ -840,6 +869,10 @@ h3 {
   font-size: 15px;
   line-height: 25px;
   color: #939CAA;
+  transition: color 0.3s;
+}
+.footer .footer__bottom .footer__bottom-container .footer__bottom-links .footer__nav .footer__list .footer__item .footer__link:hover {
+  color: #FCB72B;
 }
 .footer .footer__bottom .footer__bottom-container .footer__bottom-links .footer__social {
   display: flex;
@@ -849,6 +882,11 @@ h3 {
 .footer .footer__bottom .footer__bottom-container .footer__bottom-links .footer__social .footer__soc-link {
   font-size: 24px;
   color: #FCB72B;
+  transition: margin 0.3s, color 0.3s;
+}
+.footer .footer__bottom .footer__bottom-container .footer__bottom-links .footer__social .footer__soc-link:hover {
+  margin-top: -10px;
+  color: #fff;
 }
 
 @media only screen and (max-width: 1140px) {
